@@ -2,6 +2,41 @@
 
 Retry a function which returns a promise.
 
+
+## Usage:
+
+### Options
+
+  - interval: Base back off (defaults to 500ms).
+  - retries : Number of times to retry.
+
+### Usage in vanilla node:
+
+```js
+var retry = require('promise-retries');
+
+retry(options, function(retryInterval) {
+  return new Promise(function() {
+    //
+  });
+}).then(function() {
+
+}).catch(function() {
+
+});
+
+```
+
+### With babel + await/async
+
+```js
+
+await retry(async () => {
+  let res = await promiseFunc();
+});
+
+```
+
 ## LICENSE
 
 Copyright 2015, Mozilla Foundation

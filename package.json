@@ -1,0 +1,32 @@
+{
+  "name": "promise-retries",
+  "version": "1.0.0",
+  "description": "Retry a (async) funciton which returns a promise",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "npm run-script prepublish && mocha",
+    "prepublish": "6to5 -s -e src --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lightsofapollo/promise-retries.git"
+  },
+  "keywords": [
+    "promise",
+    "retry",
+    "async",
+    "6to5",
+    "babel"
+  ],
+  "author": "James Lal [:lightsofapollo]",
+  "license": "Apache2",
+  "bugs": {    "url": "https://github.com/lightsofapollo/promise-retries/issues"
+  },
+  "homepage": "https://github.com/lightsofapollo/promise-retries",
+  "dependencies": {
+    "babel": "^4.7.16"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  }
+}
