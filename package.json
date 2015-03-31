@@ -1,6 +1,6 @@
 {
   "name": "promise-retries",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Retry a (async) funciton which returns a promise",
   "main": "./build/index.js",
   "scripts": {

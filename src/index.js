@@ -20,7 +20,6 @@ export default async function (options, func) {
       return await func(currentRetry);
     } catch (e) {
       let sleep = currentRetry * interval;
-      console.log(currentRetry, interval, sleep, '<<!');
       // wait for a bit before retrying...
       await new Promise((accept) => setTimeout(accept, sleep));
     }
